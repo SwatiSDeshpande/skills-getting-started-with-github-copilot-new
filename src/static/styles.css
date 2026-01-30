@@ -1,4 +1,6 @@
 * {
+  list-style-type: none; /* Hide bullet points */
+
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -130,6 +132,30 @@ button:hover {
   background-color: #d1ecf1;
   color: #0c5460;
   border: 1px solid #bee5eb;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #c62828;
+  font-size: 1rem;
+}
+
+.delete-btn:focus {
+  outline: 2px solid rgba(198, 40, 40, 0.2);
+  outline-offset: 2px;
 }
 
 .hidden {
